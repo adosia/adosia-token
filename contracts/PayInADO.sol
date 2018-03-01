@@ -7,8 +7,6 @@ import './StandardToken.sol';
 import './Ownable.sol';
 import './SafeMath.sol';
 
-
-// requires 1,440,000,000 ADO deposited into ADO safe address
 contract PayInADO is Ownable {
 
   using SafeMath for uint256;
