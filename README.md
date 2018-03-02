@@ -13,10 +13,10 @@ The ADO Token will have multiple usages:
 
 - Purchase IoT Subscriptions
 
-A Bitcoin proof-of-concept is present in the Brave browser,
-which has proven invaluable for understanding many of the issues associated with attention-based contribution systems.
+
+
 
 # Adosia Roadmap
 
 Consult the roadmap section the Adosia [homepage](https://adosia.com/) for a visual description of the product phases of ADO integration.
-<img src='bat_mercury_advanced_settings_dialog.png' />
+<img src='images/adosia_roadmap.png' />
