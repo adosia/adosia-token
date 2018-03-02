@@ -1,7 +1,7 @@
 pragma solidity ^0.4.19;
 // author - adosiawolf
 
-// hey Kyle here - coments in grey explain the code functionality
+// hey Kyle here - comments in grey explain the code functionality
 // find me on git or twitter (@adosiawolf) with questions, comments or feedback
 
 
