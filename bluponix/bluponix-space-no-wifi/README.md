@@ -49,7 +49,7 @@ Bluponix Space v2.1 is an open hardware platform enabling anyone to easily creat
 
 - x2 mini-pumps + external digital IO #1 trigger on cycle
 
-- water cycle is set to 60 seconds on / 180 seconds off
+- water cycle is set to 90 seconds on / 270 seconds off
 
 - digital IO #1 triggers HIGH when water level low is detected (useful for relay water reservoir refill)
 
