@@ -1,4 +1,4 @@
-# Adosia Token (ADO) Initiatives - revision 2018-03-02
+# Adosia Token (ADO) Initiatives
 
 This repository contains source, design concepts, usage implementations and future initiatives pertinent to the Adosia Token (ADO).  All Adosia sub-initiatives will have links to corresponding repositories as they become available.
 
