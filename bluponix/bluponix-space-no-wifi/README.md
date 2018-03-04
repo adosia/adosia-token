@@ -23,11 +23,11 @@ Bluponix Space v2.1 is an open hardware platform enabling anyone to easily creat
 
 # Operating Modes (set using jumpers)
 
-- 1. Personal Hydroponics
+- Personal Hydroponics
 
-- 2. Personal Garden - mini-pumps + external relay* both trigger when soil moisture low
+- Personal Garden - mini-pumps + external relay* both trigger when soil moisture low
 
-- 3. Self-Watering Pot - Soil-Moisture Sensing
+- Self-Watering Pot - Soil-Moisture Sensing
 
 * external relay could be any arbitrary digital IO output
 
