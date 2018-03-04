@@ -1,18 +1,37 @@
-# Adosia Token (ADO) - Initiatives & Concepts [revision 2018-03-02-A]
+# Adosia Token (ADO) Initiatives - revision 2018-03-02
 
 This repository contains source, design concepts, usage implementations and future initiatives pertinent to the Adosia Token (ADO).  All Adosia sub-initiatives will have links to corresponding repositories as they become available.
-
 
 
 Further note that this repository attempts to convey Adosia's current design, plans and thinking,
 and will inevitably change during Adosia's implementation of the various ADO integrations.
 
-The ADO Token will have multiple usages:
+ADO Token - current usages for :
 
 - Purchase Adosia IoT Hardware
 
 - Purchase IoT Subscriptions
 
+- Compensate Participating Adosia Publishers
+
+
+
+Future use cases for the ADO Token:
+
+- Mining Payouts to Adosia IoT Hardware Owners
+
+- Purchase Ad Inventory on Adosia Publishers
+
+- Alternative Publisher Revenue
+
+
+Future Adosia initiatives :
+
+- Mining Payouts to Adosia IoT Hardware Owners
+
+- Purchase Ad Inventory on Adosia Publishers
+
+- Alternative Publisher Revenue
 
 
 
