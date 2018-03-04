@@ -6,7 +6,7 @@ This repository contains source, design concepts, usage implementations and futu
 Further note that this repository attempts to convey Adosia's current design, plans and thinking,
 and will inevitably change during Adosia's implementation of the various ADO integrations.
 
-ADO Token - current usages for :
+# ADO Token - current usages:
 
 - Purchase Adosia IoT Hardware
 
@@ -15,17 +15,7 @@ ADO Token - current usages for :
 - Compensate Participating Adosia Publishers
 
 
-
-Future use cases for the ADO Token:
-
-- Mining Payouts to Adosia IoT Hardware Owners
-
-- Purchase Ad Inventory on Adosia Publishers
-
-- Alternative Publisher Revenue
-
-
-Future Adosia initiatives :
+# Future use cases for the ADO Token:
 
 - Mining Payouts to Adosia IoT Hardware Owners
 
@@ -39,3 +29,12 @@ Future Adosia initiatives :
 
 Consult the roadmap section the Adosia [homepage](https://adosia.com/) for a visual description of the product phases of ADO integration.
 <img src='images/adosia_roadmap.png' />
+
+
+# Future Adosia Initiatives:
+
+- Mining Payouts to Adosia IoT Hardware Owners
+
+- Purchase Ad Inventory on Adosia Publishers
+
+- Alternative Publisher Revenue
