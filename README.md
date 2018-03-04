@@ -30,11 +30,3 @@ and will inevitably change during Adosia's implementation of the various ADO int
 Consult the roadmap section the Adosia [homepage](https://adosia.com/) for a visual description of the product phases of ADO integration.
 <img src='images/adosia_roadmap.png' />
 
-
-# Future Adosia Initiatives:
-
-- Mining Payouts to Adosia IoT Hardware Owners
-
-- Purchase Ad Inventory on Adosia Publishers
-
-- Alternative Publisher Revenue
