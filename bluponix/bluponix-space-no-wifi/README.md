@@ -1,7 +1,7 @@
 # BluPonix Space v2.1 (no wifi)
 
 Bluponix Space v2.1 is part of an open hardware IO platform initiative to enable anyone to easily create a variety of useful personal plant watering and cultivation systems. 
-The Space v2.1 IO board is designed to be pin compatible with the popular open hardware Arduino Uno R3 microcomputer controller boards for prototyping.
+The Space v2.1 IO board is designed to be pin compatible with the popular open hardware Arduino Uno R3 microcomputer controller boards, commonly used for prototyping and hobby builds.
 
 
 # Supported Hardware:
@@ -73,4 +73,3 @@ The Space v2.1 IO board is designed to be pin compatible with the popular open h
 - x2 mini-pumps trigger on sensing soil moisture low
 
 - to enable Self-Watering Pot, connect the moisture sensor and place jumpers on both digital IO input pins as shown below
-
