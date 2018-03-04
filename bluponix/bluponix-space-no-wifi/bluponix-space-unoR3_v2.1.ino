@@ -429,12 +429,21 @@ void setup() {
   
   if (opmode > 1000) {
     // jumper detected shorting 5V to A0, which tells us we will not be operating with a soil moisture sensor
-    USE_SERIAL.println("cycle hydroponics + relay mode initiated");
+    USE_SERIAL.println("30s cycle hydroponics + relay mode initiated ");
     opmode = 2;
     // digIO1 relay-1 triggers with small 12V pumps on cycle (30 seconds on, 90 seconds off)
     // digIO2 relay-2 triggers on water level switch trigger low - to refill resevoir or perform alert
     // here we can operate two different hydroponic systems - one diven by the small pumps, and one driven by a larger relay
   }
+  else if (opmode < 10) {
+    // jumper detected shorting 5V to A0, which tells us we will not be operating with a soil moisture sensor
+    USE_SERIAL.println("90s cycle hydroponics + relay mode initiated");
+    opmode = 2;
+    water_time = 90;
+    // digIO1 relay-1 triggers with small 12V pumps on cycle (30 seconds on, 90 seconds off)
+    // digIO2 relay-2 triggers on water level switch trigger low - to refill resevoir or perform alert
+    // here we can operate two different hydroponic systems - one diven by the small pumps, and one driven by a larger relay
+  }  
   else
   {
     // we are using the moisture sensor
