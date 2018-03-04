@@ -30,7 +30,7 @@ The Space v2.1 IO board is designed to be pin compatible with the popular open h
 
 - Self-Watering Pot - Soil-Moisture Sensing
 
-* external relay could be any arbitrary digital IO output
+*external relay could be any arbitrary digital IO output
 
 
 
