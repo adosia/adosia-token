@@ -2,6 +2,7 @@
 
 int loop_delay = 30000;       // wait 30 seconds between executing each loop
 int water_time = 30;          // time pump will turn on for each watering cycle increment
+int digIO2_ontime = 60;       // time io2 will turn on when water low is detected (resevoir refill feature)
 int wait_time = 1;            // how long to wait (in minutes) before sampling soil moisture again
 
 // moisture senseor calibration data
@@ -47,10 +48,13 @@ int relay1_mode = 0;
 int relay2_mode = 0;
 int cycle = 0;
 bool level_good = false;
-
+bool reading;            // debug var
 
 
 void led_display_moisture() {
+
+  //USE_SERIAL.print("Soil Status: ");
+  //USE_SERIAL.println(current_soil_status);
   
   switch (current_soil_status) {
     
@@ -289,18 +293,11 @@ void init_hydro_watercycle() {
   USE_SERIAL.println("------------------------------");
   USE_SERIAL.println("Initiate Water Cycle");
 
-    level_good = check_water_level();
-
-    if (level_good) {
-        led_set(LOW,LOW,HIGH);
-        digitalWrite(digIO1, HIGH);
-        water_now(pumpPin1, pumpPin2, water_time);
-        digitalWrite(digIO1, LOW);
-        led_set(LOW,HIGH,LOW);
-    }
-    
-    else
-      led_blink(LEDb, 500, 10);
+  led_set(LOW,LOW,HIGH);
+  digitalWrite(digIO1, LOW);
+  water_now(pumpPin1, pumpPin2, water_time);
+  digitalWrite(digIO1, HIGH);
+  led_set(LOW,HIGH,LOW);
 }
 
 
@@ -332,10 +329,6 @@ void init_soil_watercycle() {
 
   else {
 
-    level_good = check_water_level();
-
-    if (level_good) {
-
       USE_SERIAL.print("Current Soil Status: ");
       USE_SERIAL.println(current_soil_status);
       USE_SERIAL.print("Target Soil Status: ");
@@ -359,26 +352,26 @@ void init_soil_watercycle() {
         
           if (lowDeltaCount <= 3) {
 
-            if (opmode == 0) { digitalWrite(digIO1, HIGH); }        // only turn on digital output if soil mositure sensor is not in self-watering pot mode
+            if (opmode == 0) { digitalWrite(digIO1, LOW); }        // only switch digital output if soil mositure sensor is not in self-watering pot mode
             
-            // water for x seconds (can place any integer in here)
-            water_now(pumpPin1, pumpPin2, water_time);
-          
+            water_now(pumpPin1, pumpPin2, water_time);             // water for x seconds (can place any integer in here)
+            
+            if (opmode == 0) { digitalWrite(digIO1, HIGH); }       // only switch digital output if soil mositure sensor is not in self-watering pot mode
+            
             // now wait 15 seconds and check sensor again to repeat watering if needed
             delay_function(15);
 
             // read now so we can detect delta
             read_soil_moisture(analogPin);
             led_display_moisture();
+
           }
           
         }
 
         lowDeltaCount = 0;
 
-      }
-      
-    } 
+      } 
 
   }
 }
@@ -403,8 +396,8 @@ void setup() {
   // put your setup code here, to run once:
   pinMode(pumpPin1, OUTPUT);
   pinMode(pumpPin2, OUTPUT);
-  pinMode(tempSens, INPUT);      // we can't use internal pull-up resistor on tempSens as board won't boot when switch is shorted to ground on boot, we we use Space v
-  pinMode(levSwitch, INPUT);  // can't use internal pull-up resistor on levSwitch as board won't boot when switch is shorted to ground on boot
+  pinMode(tempSens, INPUT);     // we can't use internal pull-up resistor on tempSens as board won't boot when switch is shorted to ground on boot, we we use Space v
+  pinMode(levSwitch, INPUT);    // can't use internal pull-up resistor on levSwitch as board won't boot when switch is shorted to ground on boot
   
   
   // read twice because
@@ -434,6 +427,8 @@ void setup() {
     // digIO1 relay-1 triggers with small 12V pumps on cycle (30 seconds on, 90 seconds off)
     // digIO2 relay-2 triggers on water level switch trigger low - to refill resevoir or perform alert
     // here we can operate two different hydroponic systems - one diven by the small pumps, and one driven by a larger relay
+     digitalWrite(digIO1, HIGH);         // set relays in inital disabled position - high is off 
+     digitalWrite(digIO2, HIGH);
   }
   else if (opmode < 10) {
     // jumper detected shorting 5V to A0, which tells us we will not be operating with a soil moisture sensor
@@ -443,7 +438,9 @@ void setup() {
     // digIO1 relay-1 triggers with small 12V pumps on cycle (30 seconds on, 90 seconds off)
     // digIO2 relay-2 triggers on water level switch trigger low - to refill resevoir or perform alert
     // here we can operate two different hydroponic systems - one diven by the small pumps, and one driven by a larger relay
-  }  
+    digitalWrite(digIO1, HIGH);         // set relays in inital disabled position - high is off 
+    digitalWrite(digIO2, HIGH);
+  }
   else
   {
     // we are using the moisture sensor
@@ -453,29 +450,38 @@ void setup() {
     relay2_mode = digitalRead(digIO2);
 
     if (relay1_mode == HIGH && relay2_mode == HIGH) {
-      
         USE_SERIAL.println("soil moisture self-watering pot mode initiated...");
         opmode = 0;       // self-watering pot mode
         water_time = 10;  // need to reduce watering time
+        // digIO1 + digIO2 idle
     }
 
     else {
         opmode = 1;    // relay grow mode - digIO1 relay-1 triggers with small 12V pumps on soil moisture low detect
         USE_SERIAL.println("soil moisture relay grow mode initiated...");
+        // digIO2 relay-2 triggers on water level switch trigger low - to refill resevoir or perform alert
+        digitalWrite(digIO1, HIGH);         // set relays in inital disabled position - high is off 
+        digitalWrite(digIO2, HIGH);
     }
+  
   }
+
 
 
   USE_SERIAL.print("Operating Mode: ");
   USE_SERIAL.println(opmode);
+
+  read_soil_moisture(analogPin);
   
 }
 
 
 
 void loop() {
-  
-    // led_set(HIGH,HIGH,HIGH);
+
+  level_good = check_water_level();
+
+  if (level_good) {
  
     if (opmode == 0 || opmode == 1) {
 
@@ -483,7 +489,7 @@ void loop() {
         USE_SERIAL.print(lastwatercheck);
         USE_SERIAL.print(" Start: ");
         USE_SERIAL.println();
-    
+
         led_display_moisture();
 
         if (lastwatercheck > wait_time) {
@@ -515,8 +521,34 @@ void loop() {
       if (cycle == 3) { cycle = 0; }        // reset cycle
       
    }
+
+  }
+  else {
+    
+      led_blink(LEDb, 500, 10);
+
+      if (opmode == 1 || opmode == 2) {
+
+          led_set(HIGH, LOW, HIGH);
+
+          // try refill resevoir
+          USE_SERIAL.println("Refilling resevoir...");
+          
+          digitalWrite(digIO2, LOW);      // enable io2 relay
+          delay(digIO2_ontime*1000);
+          digitalWrite(digIO2, HIGH);      // disable io2 relay
+
+          if (opmode == 2) // hydro only mode
+            led_set(LOW, HIGH, LOW);  
+
+          else
+            led_display_moisture();
+            
+      }
   
-   // wait 100ms for production
-   delay(loop_delay);
+  }
+  
+  // wait 100ms for production
+  delay(loop_delay);
 }
 
