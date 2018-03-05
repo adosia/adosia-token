@@ -12,8 +12,6 @@ The Space v2.1 IO board is designed to be pin compatible with the popular open h
 
 - digital IO / external relay (x2)
 
-- temperature sensor (x1)
-
 - analog input / soil moisture sensor (x1)
 
 - RGB LED (x1)
