@@ -14,11 +14,11 @@ The Space v2.1 IO board is designed to be pin compatible with the popular open h
 
 - temperature sensor (x1)
 
-- analog input (x1)
+- analog input / soil moisture sensor (x1)
 
 - RGB LED (x1)
 
-- supply voltage headers - x2 each: Vin - 3.3V - 5V - GND
+- supply voltage headers - x2 each: Vin / 3.3V / 5V / GND
 
 
 
@@ -45,7 +45,8 @@ The Space v2.1 IO board is designed to be pin compatible with the popular open h
 - to enable Personal Hydroponics A, place a jumper connecting the analog input with the 5V power supply
 
 <img src='./images/space_2.1_modeA.png' />
-
+*jumper connector placement shown in red
+________________________________________________________________________________________________________
 
 
 # Personal Hydroponics Mode B:
@@ -59,7 +60,8 @@ The Space v2.1 IO board is designed to be pin compatible with the popular open h
 - to enable Personal Hydroponics B, short a jumper wire connecting the analog input with the GND pin
 
 <img src='./images/space_2.1_modeB.png' />
-
+*jumper wire short connection shown in red
+________________________________________________________________________________________________________
 
 
 # Personal Garden Mode:
@@ -71,13 +73,18 @@ The Space v2.1 IO board is designed to be pin compatible with the popular open h
 - to enable Personal Garden Mode, connect the moisture sensor and remove all jumpers
 
 <img src='./images/space_2.1_modeC.png' />
-
+*moisture sensor connection shown in blue
+________________________________________________________________________________________________________
 
 
 # Self-Watering Pot / Planter Mode:
 
 - x2 mini-pumps trigger on sensing soil moisture low
 
-- to enable Self-Watering Pot, connect the moisture sensor and place jumpers on both digital IO input pins as shown below
+- to enable Self-Watering Pot mode, connect the moisture sensor and place jumpers on both digital IO input pins as shown below
 
 <img src='./images/space_2.1_modeD.png' />
+*jumper wire connector placements shown in red
+*moisture sensor connection shown in blue
+
+
