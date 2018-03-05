@@ -44,6 +44,8 @@ The Space v2.1 IO board is designed to be pin compatible with the popular open h
 
 - to enable Personal Hydroponics A, place a jumper connecting the analog input with the 5V power supply
 
+<img src='./images/space_v2.1_modeA.png' />
+
 
 
 # Personal Hydroponics Mode B:
@@ -56,6 +58,8 @@ The Space v2.1 IO board is designed to be pin compatible with the popular open h
 
 - to enable Personal Hydroponics B, short a jumper wire connecting the analog input with the GND pin
 
+<img src='./images/space_v2.1_modeB.png' />
+
 
 
 # Personal Garden Mode:
@@ -66,6 +70,8 @@ The Space v2.1 IO board is designed to be pin compatible with the popular open h
 
 - to enable Personal Garden Mode, connect the moisture sensor and remove all jumpers
 
+<img src='./images/space_v2.1_modeC.png' />
+
 
 
 # Self-Watering Pot / Planter Mode:
@@ -73,3 +79,5 @@ The Space v2.1 IO board is designed to be pin compatible with the popular open h
 - x2 mini-pumps trigger on sensing soil moisture low
 
 - to enable Self-Watering Pot, connect the moisture sensor and place jumpers on both digital IO input pins as shown below
+
+<img src='./images/space_v2.1_modeD.png' />
