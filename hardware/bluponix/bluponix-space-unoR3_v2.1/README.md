@@ -29,9 +29,7 @@ The Space v2.1 IO board is designed to be pin compatible with the popular open h
 
 - Mode 3:  Soil Grow - Personal Garden
 
-- Mode 3:  Soil Grow - Personal Garden
-
-- Self-Watering Pot - Soil-Moisture Sensing
+- Mode 4: Soil Grow - Self-Watering Pot / Small Grow:
 
 
 
