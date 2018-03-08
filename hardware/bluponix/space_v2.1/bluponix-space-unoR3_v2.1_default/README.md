@@ -1,27 +1,12 @@
-# BluPonix Space v2.1 (no wifi)
+# Default Software for BluPonix Space v2.1 (no wifi)
 
-Bluponix Space v2.1 is part of an open hardware IO platform initiative to enable anyone to easily create a variety of useful personal plant watering and garden cultivation systems.
+This is the repository for the default software that ships with any Bluponix Space v2.1 IO board + Arduino Uno hardware combination or hobby kit.
 
-The Space v2.1 IO board is designed to be pin compatible with the popular open hardware Arduino Uno R3 microcomputer controller boards, commonly used for prototyping and hobby builds.
-
-
-# Supported Hardware:
-
-- Submersible DC Water Pumps - AND/OR - Solenoids - 12V/5W (x2 mix and match)
-
-- Water level sensor switch (x1)
-
-- Digital IO / external relay control (x2)
-
-- Analog input / soil moisture sensor (x1)
-
-- RGB LED (x1)
-
-- Supply voltage headers - x2 each: Vin / 3.3V / 5V / GND
+Technical details and more information specific the Space v2.1 IO hardware platform can be found [here](https://www.github.com)
 
 
 
-# Operating Modes (set using jumpers):
+# x4 Operating Modes (modes set using jumpers):
 
 - Mode 1:  Hydroponics Parallel Watering
 
@@ -31,6 +16,16 @@ The Space v2.1 IO board is designed to be pin compatible with the popular open h
 
 - Mode 4: Soil Grow - Self-Watering Pot / Small Grow:
 
+
+# Jumper Settings for Default Software:
+
+- To Disable use of the water
+
+- Mode 2:  Hydroponics Alternate Watering
+
+- Mode 3:  Soil Grow - Personal Garden
+
+- Mode 4: Soil Grow - Self-Watering Pot / Small Grow:
 
 
 # Mode 1:  Hydroponics Parallel Watering:
