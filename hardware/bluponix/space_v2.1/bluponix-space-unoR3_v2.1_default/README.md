@@ -40,7 +40,7 @@ Technical details and more information specific the Space v2.1 IO hardware platf
 
 - to enable Mode 1, place a jumper connecting the analog input of the soil moisture sensor directly with the adjacent 5V power pin
 
-<img src='./images/space_2.1_modeA.png' />
+<img src='../images/space_2.1_modeA.png' />
 jumper connector placement shown in red
 ________________________________________________________________________________________________________________________________
 
@@ -57,7 +57,7 @@ ________________________________________________________________________________
 
 - to enable Mode 2, short a jumper wire to connecting the analog input of the soil moisture sensor directly with any GND pin
 
-<img src='./images/space_2.1_modeB.png' />
+<img src='../images/space_2.1_modeB.png' />
 jumper wire short connection shown in red
 ________________________________________________________________________________________________________________________________
 
@@ -74,7 +74,7 @@ ________________________________________________________________________________
 
 - to enable Mode 3:  connect the moisture sensor (represented in blue below) and remove all jumpers
 
-<img src='./images/space_2.1_modeC.png' />
+<img src='../images/space_2.1_modeC.png' />
 moisture sensor connection shown in blue
 ________________________________________________________________________________________________________________________________
 
@@ -87,6 +87,6 @@ ________________________________________________________________________________
 
 - to enable Mode 4, connect the moisture sensor (blue) and place jumpers (represented in red below) on both digital IO input pins as shown below
 
-<img src='./images/space_2.1_modeD.png' />
+<img src='../images/space_2.1_modeD.png' />
 jumper wire connector placements shown in red - moisture sensor connection shown in blue
 ________________________________________________________________________________________________________________________________
