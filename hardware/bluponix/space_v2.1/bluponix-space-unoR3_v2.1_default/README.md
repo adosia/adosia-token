@@ -2,7 +2,7 @@
 
 This is the repository for the default software that ships with any Bluponix Space v2.1 IO board + Arduino Uno hardware combination or hobby kit.
 
-Technical details and more information specific the Space v2.1 IO hardware platform can be found [here](https://www.github.com)
+Technical details and more information specific the Space v2.1 IO hardware platform can be found [here](https://github.com/adosia/adosia-token/tree/master/hardware/bluponix/space_v2.1)
 
 
 

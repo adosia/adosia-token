@@ -4,7 +4,7 @@ Bluponix Space v2.1 is part of an open hardware IO platform initiative to enable
 
 The Space v2.1 IO board is designed to be pin compatible with the popular open hardware Arduino Uno R3 microcomputer controller boards, commonly used for prototyping and hobby builds.
 
-Default open-source software for Space v2.1 operating with an Arduino uno host microcontroller can be found [here](https://github.org)
+Default open-source software for Space v2.1 operating with an Arduino uno host microcontroller can be found [here](https://github.com/adosia/adosia-token/tree/master/hardware/bluponix/space_v2.1/bluponix-space-unoR3_v2.1_default)
 
 
 # Space v2.1 Supported Hardware:
