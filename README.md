@@ -10,7 +10,7 @@ The goal of the ADO smart contract is to elevate communities by enabling an enti
 
 The ADO smart contract will enable existing Adosia IoT Platform users the ability to monetize (sell/license)
 their perfected IoT device operating profile creations to other Adosia users within a peer-to-peer marketplace.
-Adosia IoT Platform use ADO tokens to sell or purchase IoT device operating profiles within the Adosia IoT Platform.
+Adosia IoT Platform users will use ADO tokens to sell or purchase IoT device operating profiles within the Adosia IoT Platform.
 
 
 The Adosia IoT Platform is functional and permits Adosia users to rapidly create and deploy custom IoT WiFi control systems.
