@@ -21,12 +21,11 @@ while rewarding them (via sales) for promoting their creations to the world.
 # Aligning with Cardano
 
 [IOHK](https://iohk.io/about/) is a technology company working to provide financial services to the three billion unbanked people in the world that don't have them.
-
 IOHK's [Cardano](https://www.cardano.org) project is a fully open source public blockchain and cryptocurrency initiative seeking to deliver a smart contract platform
 having more advanced features that any protocol developed to date.  Adosia has selected Cardano as the target blockchain and smart contract platform for the ADO token as the Cardano project is the first
 blockchain initiative to evolve utilizing robust scientific procedures including scientific research, academic peer review, and formal methods.
 
-The ADO smart contract will be launched after Cardano smart contracts become available.
+The Adosia IoT Platform will be expanded in parallel with the development of Cardano and the ADO smart contract will be launched once Cardano smart contracts become available.
 
 
 # ADO Token Allocations for Early Adosia IoT Platform Adopters
