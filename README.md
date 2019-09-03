@@ -32,7 +32,7 @@ blockchain initiative to evolve utilizing robust scientific procedures including
 The ADO smart contract will be launched after Cardano smart contracts become available.
 
 
-# ADO Token Allocations for Early Adopters of the Adosia IoT Platform
+# ADO Token Allocations for Early Adosia IoT Platform Adopters
 
 Prior to the future release of the ADO smart contract, a random amount of ADO tokens will be tentatively allocated to a respective
 Adosia IoT Platform user's account whenever that user first connects (and activates) any Adosia-supported open hardware IoT device to the Adosia IoT Platform.
@@ -56,7 +56,7 @@ and does not require users to purchase hardware from (or manufactured by) Adosia
 
   - purchasing a WEMOS baseboard pre-flashed with the Adosia binary (along with optional Adosia SPACE IO board) from the [Adosia IoT Store](https://adosia.io)
  
-  - or by using the popular Arduino IDE to flash your own WEMOS WiFi baseboards using Adosia's open source [phoenix connect script](https://github.com/adosia/adosia-iot/tree/master/SPACE_v2.2/adosia_phoenix)
+  - or use the popular Arduino IDE to download by latest Adosia binary by flashing your own WEMOS WiFi baseboard with Adosia's open source [phoenix connect script](https://github.com/adosia/adosia-iot/tree/master/SPACE_v2.2/adosia_phoenix)
 
 
 3. Use your mobile phone to connect your IoT device to the Adosia IoT Platform (details found via the [Adosia Learn Page](https://adosia.com/faq)
