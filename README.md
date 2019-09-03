@@ -5,20 +5,20 @@
 This repository contains source, design concepts, usage implementations and future initiatives pertinent to the Adosia Token (ADO).
 
 Development efforts for this repository will entail a Plutus smart contract (to be deployed on the Cardano blockchain protocol)
-that will interface with the [Adosia IoT Platform](https://adosia.com) to establish an ecosystem to enable Adosia's IoT Platform users
-to monetize/sell/license their perfected IoT device operating profiles by providing their "IP Data" for purchase/use by other Adosia
-users within a peer-to-peer marketplace.
+that will interface with the [Adosia IoT Platform](https://adosia.com).  The goal of the ADO smart contract is to elevate communities
+with new and powerful peer-to-peer economic opportunities.  The ADO smart contract will enable Adosia IoT Platform users the ability to monetize (sell/license)
+their perfected IoT device operating profile creations to other Adosia users within a peer-to-peer marketplace.
 
-A peer-to-peer marketplace for IoT device operating profiles will enable Adosia IoT Platform users to purchase IoT device configurations
-in order to to rapidly deploy custom IoT control systems while both rewarding Adosia users for their creativity
-and incentivizing them to promote their creations.
+Adosia users can rapidly deploy custom IoT control systems while being incentivized to both create new IoT device profile offerings
+and to promote those creations to the world.
+
 
 
 # How to Connect IoT Hardware to the Adosia IoT Platform
 
-1. Sign Up FREE for the Adosia IoT Platform [here](https://adosia.com)
+1. Sign Up FREE for the [Adosia IoT Platform](https://adosia.com)
 
-2a. Purchase Adosia IoT hardware pre-flashed with the latest Adosia Binary [here](https://adosia.io)
+2. Purchase Adosia IoT hardware pre-flashed with the latest Adosia Binary [here](https://adosia.io)
 
 - OR -
 
