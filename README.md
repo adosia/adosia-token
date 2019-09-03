@@ -36,7 +36,7 @@ Adosia IoT Platform user's account whenever that user first connects (and activa
 
 Once the Adosia platform confirms newly connected IoT hardware to be a legitimate IoT device (ruling out bot connections, platform manipulation, etc.),
 the respective tentative token allocation will be secured to the connecting user's account with the Adosia IoT Platform. All token allocations secured prior to the production release
-of the ADO smart contract (following Cardano smart contract availability) will be transferable to the respective user's Cardano wallet address upon the release of the ADO smart contract.
+of the ADO smart contract (following Cardano smart contract availability) will become transferable to the respective user's Cardano wallet address upon the release of the ADO smart contract.
 
 
 The Adosia IoT Platform supports ESP8266-based WiFi baseboards which currently include the WEMOS D1R2 and WEMOS D1 Mini WiFi baseboards,
@@ -50,12 +50,12 @@ and does not require users to purchase hardware from (or manufactured by) Adosia
 
 2. Obtain compatible IoT hardware pre-flashed with the latest Adosia Binary by either:
 
-  - purchasing a WEMOS baseboard pre-flashed with the Adosia binary (along with optional Adosia SPACE IO board) from the [Adosia IoT Store](https://adosia.io)
+  - purchasing a WEMOS WiFi baseboard pre-flashed with the Adosia binary (along with optional [Adosia SPACE IO board](https://adosia.io/product/adosia-iot-space-io-board-shield/)) from the [Adosia IoT Store](https://adosia.io)
  
   - or use the popular Arduino IDE to download by latest Adosia binary by flashing your own WEMOS WiFi baseboard with Adosia's open source [phoenix connect script](https://github.com/adosia/adosia-iot/tree/master/SPACE_v2.2/adosia_phoenix)
 
 
-3. Use your mobile phone to connect your IoT device to the Adosia IoT Platform (details found via the [Adosia Learn Page](https://adosia.com/faq)
+3. Use your mobile phone to connect your IoT device to the Adosia IoT Platform (details found via the [Adosia Learn Page](https://adosia.com/faq))
   
 
 Compatible open hardware boards flashed using Adosia's open source [phoenix connect script](https://github.com/adosia/adosia-iot/tree/master/SPACE_v2.2/adosia_phoenix) and the Arduino IDE will automatically connect to Adosia servers to download the latest Adosia binary.
