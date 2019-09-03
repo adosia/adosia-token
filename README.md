@@ -40,7 +40,7 @@ of the ADO smart contract (following Cardano smart contract availability) will b
 
 
 The Adosia IoT Platform supports ESP8266-based WiFi baseboards which currently include the WEMOS D1 R2 and WEMOS D1 Mini WiFi baseboards,
-and does not require users to purchase hardware from (or manufactured by) Adosia.
+and does not require users to purchase hardware from (or manufactured by) Adosia.  This enables anyone in the world the ability to begin using and creating with the Adosia IoT Platform for free.
 
 
 # How to Connect IoT Hardware to the Adosia IoT Platform
