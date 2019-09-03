@@ -1,9 +1,8 @@
 # Adosia Token (ADO)
 
 <img src='./images/adosia-icon-200.png' />
-
 This repository contains source, design concepts, usage implementations and future initiatives pertinent to the Adosia Token (ADO).
-The goal of the ADO smart contract is to elevate communities with new and powerful peer-to-peer economic opportunities.
+The goal of the ADO smart contract is to elevate communities by enabling new and powerful peer-to-peer economic opportunities.
 
 The ADO smart contract will enable Adosia IoT Platform users the ability to monetize (sell/license)
 their perfected IoT device operating profile creations to other Adosia users within a peer-to-peer marketplace.
@@ -13,6 +12,11 @@ that will interface with the [Adosia IoT Platform](https://adosia.com).
 
 Adosia users can rapidly deploy custom IoT control systems while being incentivized to both create new IoT device profile offerings
 and to promote those creations to the world.
+
+
+# Aligning with Cardano
+
+IOHK creating open source tools to bring financial services to the 3B unbanked people people that don't have them. 
 
 
 
