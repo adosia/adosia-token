@@ -6,7 +6,7 @@ smart contract (to be deployed on the Cardano blockchain protocol) that will int
 
 
 
-The goal of the ADO smart contract is to elevate communities by enabling a new class of powerful peer-to-peer economic opportunities.
+The goal of the ADO smart contract is to elevate communities by enabling an entirely new class of powerful peer-to-peer economic opportunities.
 
 
 The ADO smart contract will enable existing Adosia IoT Platform users the ability to monetize (sell/license)
