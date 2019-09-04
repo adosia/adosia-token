@@ -52,13 +52,13 @@ and does not require users to purchase hardware from (or manufactured by) Adosia
 
   - purchasing a WEMOS WiFi baseboard pre-flashed with the Adosia binary (along with optional [Adosia SPACE IO board](https://adosia.io/product/adosia-iot-space-io-board-shield/)) from the [Adosia IoT Store](https://adosia.io)
  
-  - or you can use the popular Arduino IDE to download by latest Adosia binary by flashing your own WEMOS WiFi baseboard with Adosia's open source [phoenix connect script](https://github.com/adosia/adosia-iot/tree/master/SPACE_v2.2/adosia_phoenix)
+  - or you can use the popular Arduino IDE to download by latest Adosia binary by flashing your own WEMOS WiFi baseboard with Adosia's open source [phoenix connect script](https://github.com/adosia/adosia-iot/tree/master/adosia_phoenix)
 
 
 **3. Use a mobile device to connect your IoT hardware to the Adosia IoT Platform (see [Adosia Learn Page](https://adosia.com/faq.php))**
   
 
-Compatible open hardware boards flashed using Adosia's open source [phoenix connect script](https://github.com/adosia/adosia-iot/tree/master/SPACE_v2.2/adosia_phoenix) and the Arduino IDE will automatically connect to Adosia servers to download the latest Adosia binary.
+Compatible open hardware boards flashed using Adosia's open source [phoenix connect script](https://github.com/adosia/adosia-iot/tree/master/adosia_phoenix) and the Arduino IDE will automatically connect to Adosia servers to download the latest Adosia binary.
 
 The schematics and layout files for Adosia's open hardware SPACE IO board (currently compatible with WEMOS D1 R2 WiFi baseboard) can be found [here](https://github.com/adosia/adosia-iot/tree/master/SPACE_v2.2/hardware/IO_BOARD_WEMOS_D1R2)
 
